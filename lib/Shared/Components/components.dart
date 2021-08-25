@@ -143,14 +143,15 @@ Widget buildTaskItem(Map model, BuildContext context) {
                 color: Colors.green,
               )),
           IconButton(
-              onPressed: () {
-                AppCubit.get(context)
-                    .updateData(status: 'archive', id: model['id']);
-              },
-              icon: Icon(
-                Icons.archive,
-                color: Colors.black45,
-              ))
+            onPressed: () {
+              AppCubit.get(context)
+                  .updateData(status: 'archive', id: model['id']);
+            },
+            icon: Icon(
+              Icons.archive,
+              color: Colors.black45,
+            ),
+          ),
         ],
       ),
     ),
